@@ -25,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x , 14f);
         }
 
+        UpdateAnimationUpdate();
+        
+    }
+
+    private void UpdateAnimationUpdate()
+    {
         if (dirX > 0f)
         {
             anim.SetBool("running", true);
