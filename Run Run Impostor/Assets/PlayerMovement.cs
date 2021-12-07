@@ -9,8 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     private float dirX = 0f;
-    private float moveSpeed = 7f;    // magical number
-    private float jumpForce = 14f;  // magical number
+   [SerializeField] private float moveSpeed = 7f;    // magical number
+   [SerializeField] private float jumpForce = 14f;  // magical number
 
     // Start is called before the first frame update
     private void Start()
