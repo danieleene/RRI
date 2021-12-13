@@ -14376,6 +14376,7 @@ GameObject:
   - component: {fileID: 794801512}
   - component: {fileID: 794801513}
   - component: {fileID: 794801514}
+  - component: {fileID: 794801515}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -14544,6 +14545,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cherriesText: {fileID: 826489898}
+--- !u!114 &794801515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794801507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ada4ae0c8e02654db6c9a6afea54b9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &826489896
 GameObject:
   m_ObjectHideFlags: 0
@@ -16455,7 +16468,7 @@ GameObject:
   - component: {fileID: 1721820828}
   m_Layer: 0
   m_Name: Spikes
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
