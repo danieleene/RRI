@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerLife : MonoBehaviour
 {
-
+    private Rigidbody2D rb;
     private Animator anim;
     
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -22,6 +23,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Die()
     {
+        rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
     }
 
