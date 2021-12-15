@@ -308,7 +308,7 @@ Transform:
   - {fileID: 1115698281}
   - {fileID: 1904817367}
   m_Father: {fileID: 1872885723}
-  m_RootOrder: 16
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &408066277
 GameObject:
@@ -48013,6 +48013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1519390362}
   - component: {fileID: 1519390363}
+  - component: {fileID: 1519390364}
   m_Layer: 0
   m_Name: Saw
   m_TagString: Untagged
@@ -48084,6 +48085,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1519390364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519390361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb0824dfb49c5f488ac6c4569b1b98f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1115698280}
+  - {fileID: 1904817366}
+  speed: 2
 --- !u!1001 &1546816455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48297,6 +48314,7 @@ Transform:
   - {fileID: 1997319671}
   - {fileID: 169395990}
   - {fileID: 1626758239}
+  - {fileID: 287359707}
   - {fileID: 491284643}
   - {fileID: 59945786}
   - {fileID: 827411466}
@@ -48307,7 +48325,6 @@ Transform:
   - {fileID: 2034428217}
   - {fileID: 1546816456}
   - {fileID: 703500511}
-  - {fileID: 287359707}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
