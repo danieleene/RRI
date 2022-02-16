@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator anim;
 
+
+    [SerializeField] private Joystick joystick;
+
+
+
     [SerializeField] private LayerMask jumpableGround;
 
     private float dirX = 0f;
@@ -33,7 +38,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        dirX = Input.GetAxisRaw("Horizontal");
+        
+        if (joystick.Horizontal >= .2f)
+        {
+            dirX = moveSpeed;
+        } else if (joystick.Horizontal <= -.2f)
+        {
+            dirX = -moveSpeed;
+        } else
+        {
+            dirX = 0f;
+        }
+
+
+
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
