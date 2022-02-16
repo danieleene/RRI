@@ -51,10 +51,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+        float verticalMove = joystick.Vertical;
+
 
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (verticalMove >= .5f  && IsGrounded())
         {
             jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x , jumpForce);
