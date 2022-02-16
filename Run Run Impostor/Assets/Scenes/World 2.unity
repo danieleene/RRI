@@ -70188,12 +70188,12 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 256
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 256
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -70223,6 +70223,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1513534956}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1513534958 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    type: 3}
+  m_PrefabInstance: {fileID: 1513534956}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1519372604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72122,5 +72134,15 @@ PrefabInstance:
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 826489898}
+    - target: {fileID: 7405541461569232670, guid: ebf2f8f4ee4e4354b839c1ea49a3fe6a,
+        type: 3}
+      propertyPath: joystick
+      value: 
+      objectReference: {fileID: 1513534958}
+    - target: {fileID: 7405541461569232670, guid: ebf2f8f4ee4e4354b839c1ea49a3fe6a,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebf2f8f4ee4e4354b839c1ea49a3fe6a, type: 3}
